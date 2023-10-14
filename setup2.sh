@@ -1,5 +1,6 @@
 #!/bin/bash
-rm -rf c4_deployment-5
+
+rm -rf Deployment5
 source test/bin/activate
 git clone https://github.com/Sameen-k/Deployment5.git
 cd Deployment5
