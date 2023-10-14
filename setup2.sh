@@ -1,5 +1,4 @@
 #!/bin/bash
-
 rm -rf Deployment5
 source test/bin/activate
 git clone https://github.com/Sameen-k/Deployment5.git
