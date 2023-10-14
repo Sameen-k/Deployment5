@@ -28,7 +28,8 @@ junit 'test-reports/results.xml'
 stage ('Deploy') {
 steps {
 sh '''#!/bin/bash
-echo "command to run the setup.sh"
+scp /var/lib/jenkins/workspace/dep5_main/setup.sh ubuntu@107.22.152.12:/home/ubuntu
+ssh ubuntu@107.22.152.12 'bash -s </home/ubuntu/setup.sh'
 '''
 }
 }
