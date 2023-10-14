@@ -101,4 +101,25 @@ Then to the deploy stage in the Jenkinsfilev1 we can add the following changes t
 
 <img width="632" alt="Screen Shot 2023-10-14 at 3 18 26 AM" src="https://github.com/Sameen-k/Deployment5/assets/128739962/40b85726-4c19-4190-9b96-e55a45b3d0a4">
 
-Then 
+After these changes to the Jenkins file, you can run a multibranch pipline on Jenkins by running Jenkinsfilev1. This should launch your application. Using the public ip address of instance 2 (application) ending with port 8000 you should be able to access the application
+
+![Screen Shot 2023-10-13 at 8 29 11 PM](https://github.com/Sameen-k/Deployment5/assets/128739962/d8c39791-5fcf-490e-b491-3ec8dd762c88)
+
+![Screen Shot 2023-10-13 at 8 29 04 PM](https://github.com/Sameen-k/Deployment5/assets/128739962/79c35632-3612-425a-9787-0f5b43ef0f7f)
+
+This is what the application home page looks like. 
+
+#### HTML Change
+At this point we're going to test the build by making a change to the HTML file 
+
+![Screen Shot 2023-10-13 at 8 41 47 PM](https://github.com/Sameen-k/Deployment5/assets/128739962/e2271024-a77d-4d5f-a642-8b094d225067)
+
+I decided to change the welcome paragraph text color to red. After running Jenkinsfilev2 in Jenkins. The change was reflected. 
+
+![Screen Shot 2023-10-13 at 9 47 36 PM](https://github.com/Sameen-k/Deployment5/assets/128739962/f012569e-db5b-4589-8625-da0869ff3b1a)
+
+## Troubleshooting
+The source code for the setup.sh and setup2.sh files were originally from a different repository so changes needed to be made within those scripts to reflect the current working repository before those scripts were able to properly function.  
+
+
+
